@@ -1,6 +1,11 @@
 package com.example.JavaPatternsTask14.controllers;
 
 import com.example.JavaPatternsTask14.models.Manufacture;
+import com.example.JavaPatternsTask14.models.User;
+import com.example.JavaPatternsTask14.services.ManufactureService;
+import com.example.JavaPatternsTask14.services.UserService;
+import jakarta.transaction.Transactional;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -8,32 +13,30 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Controller
+@RequiredArgsConstructor
 @RequestMapping("/manufactures")
 public class ManufactureController {
-    private final List<Manufacture> manufactures = new ArrayList<>();
+    private final ManufactureService service;
 
     @GetMapping
     @ResponseBody
-    public List<Manufacture> getManufactures() {
-        System.out.println("GET\n" + manufactures);
-        return manufactures;
+    public List<Manufacture> getUsers() {
+        return service.getAllManufactures();
     }
+
     @PostMapping
     @ResponseBody
-    public Manufacture createManufacture(@RequestBody Manufacture manufacture) {
-        System.out.println("POST\n" + manufacture);
-        manufactures.add(manufacture);
+    public Manufacture addManufacture(
+            @RequestBody Manufacture manufacture
+    ) {
+        service.addManufacture(manufacture);
         return manufacture;
     }
 
-    @DeleteMapping("/{index}")
+    @Transactional
+    @DeleteMapping("/{id}")
     @ResponseBody
-    public boolean deleteManufacture(@PathVariable int index) {
-        System.out.println("DELETE\n" + index);
-        if (index >= 0 && index < manufactures.size()) {
-            manufactures.remove(index);
-            return true;
-        }
-        return false;
+    public String deleteManufacture(@PathVariable Long id) {
+        return "Count: " + service.deleteManufactureById(id);
     }
 }

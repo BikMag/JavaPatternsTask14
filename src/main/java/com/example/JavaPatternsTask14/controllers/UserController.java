@@ -1,43 +1,40 @@
 package com.example.JavaPatternsTask14.controllers;
 
-import com.example.JavaPatternsTask14.models.Phone;
 import com.example.JavaPatternsTask14.models.User;
-import com.example.JavaPatternsTask14.services.PhoneService;
 import com.example.JavaPatternsTask14.services.UserService;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 @Controller
 @RequiredArgsConstructor
-@RequestMapping("/phones")
-public class PhoneController {
-    private final PhoneService service;
+@RequestMapping(value = "/users")
+public class UserController {
+
+    private final UserService service;
 
     @GetMapping
     @ResponseBody
-    public List<Phone> getPhones() {
-        return service.getAllPhones();
+    public List<User> getUsers() {
+        return service.getAllUsers();
     }
 
     @PostMapping
     @ResponseBody
-    public Phone addPhone(
-            @RequestBody Phone phone
+    public User addUser(
+            @RequestBody User user
     ) {
-        service.addPhone(phone);
-        return phone;
+        service.addUser(user);
+        return user;
     }
 
     @Transactional
     @DeleteMapping("/{id}")
     @ResponseBody
-    public String deletePhone(@PathVariable Long id) {
-        return "Count: " + service.deletePhoneById(id);
+    public String deleteUser(@PathVariable Long id) {
+        return "Count: " + service.deleteUserById(id);
     }
 }

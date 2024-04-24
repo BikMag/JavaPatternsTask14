@@ -47,6 +47,12 @@ public class PhoneController {
         return service.getManufactureByPhone(phoneId);
     }
 
+    @GetMapping(value = "/phone/{name}")
+    @ResponseBody
+    public List<Phone> getAllByName(@PathVariable("name") String name) {
+        return service.getPhonesByName(name);
+    }
+
 //  Фильтрация (сортировка) данных
     @GetMapping("/sort/{column}")
     @ResponseBody

@@ -8,6 +8,7 @@ import java.util.Optional;
 
 public interface PhoneRepo extends JpaRepository<Phone, Long> {
     Optional<List<Phone>> getAllBy();
+    Optional<List<Phone>> findAllByName(String name);
 
     Optional<Integer> deleteUserById(Long id);
 }

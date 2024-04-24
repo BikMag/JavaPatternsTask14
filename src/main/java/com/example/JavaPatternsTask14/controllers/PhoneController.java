@@ -1,7 +1,10 @@
 package com.example.JavaPatternsTask14.controllers;
 
+import com.example.JavaPatternsTask14.models.Manufacture;
 import com.example.JavaPatternsTask14.models.Phone;
 import com.example.JavaPatternsTask14.services.PhoneService;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -35,5 +38,19 @@ public class PhoneController {
     @ResponseBody
     public String deletePhone(@PathVariable Long id) {
         return "Count: " + service.deletePhoneById(id);
+    }
+
+    @GetMapping(value = "/phone/{phoneId}/manufacture")
+    @ResponseBody
+    public Manufacture getPhoneManufacture(@PathVariable("phoneId")
+                                         Long phoneId){
+        return service.getManufactureByPhone(phoneId);
+    }
+
+//  Фильтрация (сортировка) данных
+    @GetMapping("/sort/{column}")
+    @ResponseBody
+    public List<Phone> sortPhone(@PathVariable("column") String column) {
+        return service.sortPhones(column);
     }
 }

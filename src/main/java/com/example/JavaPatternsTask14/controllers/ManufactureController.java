@@ -1,6 +1,7 @@
 package com.example.JavaPatternsTask14.controllers;
 
 import com.example.JavaPatternsTask14.models.Manufacture;
+import com.example.JavaPatternsTask14.models.Phone;
 import com.example.JavaPatternsTask14.services.ManufactureService;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
@@ -35,5 +36,12 @@ public class ManufactureController {
     @ResponseBody
     public String deleteManufacture(@PathVariable Long id) {
         return "Count: " + service.deleteManufactureById(id);
+    }
+
+    //  Фильтрация (сортировка) данных
+    @GetMapping("/sort/{column}")
+    @ResponseBody
+    public List<Manufacture> sortManufacture(@PathVariable("column") String column) {
+        return service.sortManufactures(column);
     }
 }

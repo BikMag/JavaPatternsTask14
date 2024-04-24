@@ -1,10 +1,13 @@
 package com.example.JavaPatternsTask14.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.util.List;
 
 @Entity
 @Table(name = "manufactures")
@@ -24,6 +27,9 @@ public class Manufacture {
     private String name;
     @Column(name = "address")
     private String address;
+
+    @OneToMany(mappedBy = "manufacture")
+    private List<Phone> phones;
 
     @Override
     public String toString() {

@@ -1,5 +1,6 @@
 package com.example.JavaPatternsTask14.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -24,6 +25,9 @@ public class Phone {
     private String name;
     @Column(name = "creation_year")
     private int creationYear;
+    @ManyToOne
+    @JsonIgnore
+    public Manufacture manufacture;
 
     @Override
     public String toString() {

@@ -19,13 +19,13 @@ public class UserService {
     @PostConstruct
     void init() {
         session = sessionFactory.openSession();
-        User user = new User();
-        user.setFirstName("Vasya");
-        user.setLastName("Dima");
-
-        var transaction = session.beginTransaction();
-        session.saveOrUpdate(user);
-        transaction.commit();
+//        User user = new User();
+//        user.setFirstName("Vasya");
+//        user.setLastName("Dima");
+//
+//        var transaction = session.beginTransaction();
+//        session.saveOrUpdate(user);
+//        transaction.commit();
     }
 
     public List<User> getAllUsers() {

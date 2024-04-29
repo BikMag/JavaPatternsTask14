@@ -4,6 +4,7 @@ import com.example.JavaPatternsTask14.models.Manufacture;
 import com.example.JavaPatternsTask14.models.Phone;
 import com.example.JavaPatternsTask14.repositories.PhoneRepo;
 import jakarta.annotation.PostConstruct;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.hibernate.Session;
@@ -16,6 +17,7 @@ import java.util.List;
 @Service
 @RequiredArgsConstructor
 @Slf4j
+@Transactional
 public class PhoneService {
     private final PhoneRepo phoneRepository;
     private final SessionFactory sessionFactory;

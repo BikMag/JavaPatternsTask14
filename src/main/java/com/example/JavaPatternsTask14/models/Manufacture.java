@@ -34,6 +34,7 @@ public class Manufacture {
     @Override
     public String toString() {
         return "Manufacture{" +
+                "id='" + id + '\'' +
                 "name='" + name + '\'' +
                 ", address='" + address + '\'' +
                 '}';

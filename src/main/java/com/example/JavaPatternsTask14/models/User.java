@@ -24,4 +24,13 @@ public class User {
     private String firstName;
     @Column(name = "last_name")
     private String lastName;
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
+    }
 }

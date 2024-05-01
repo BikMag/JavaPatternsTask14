@@ -21,3 +21,6 @@ name varchar(100),
 address varchar(100)
 );
 create sequence manufactures_sequence start 1 increment 1;
+
+create sequence web_users start 1 increment 1;
+

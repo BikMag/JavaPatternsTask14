@@ -168,17 +168,17 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 11853 [RMI TCP Connection(3)-192.168.56.1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 3 ms
 37533 [http-nio-8080-exec-9] INFO  c.e.J.Aspect.Aspect – Parameters: den
 37796 [http-nio-8080-exec-9] INFO  c.e.J.Aspect.Aspect – Finish!
-37797 [http-nio-8080-exec-9] INFO  c.e.J.Aspect.Aspect – UserDetails com.example.JavaPatternsTask14.services.WebUserServiceImpl.loadUserByUsername(String) takes 263ms
+37797 [http-nio-8080-exec-9] INFO  c.e.J.Aspect.Aspect – UserDetails com.example.JavaPatternsTask14.services.WebUserService.loadUserByUsername(String) takes 263ms
 70225 [http-nio-8080-exec-6] INFO  c.e.J.Aspect.Aspect – Parameters: {}
 70226 [http-nio-8080-exec-6] INFO  c.e.J.services.PhoneService – Get all phones
 70270 [http-nio-8080-exec-6] INFO  c.e.J.Aspect.Aspect – Finish!
 70270 [http-nio-8080-exec-6] INFO  c.e.J.Aspect.Aspect – List com.example.JavaPatternsTask14.services.PhoneService.getAllPhones() takes 45ms
 122628 [http-nio-8080-exec-3] INFO  c.e.J.Aspect.Aspect – Parameters: alex
 122631 [http-nio-8080-exec-3] INFO  c.e.J.Aspect.Aspect – Finish!
-122632 [http-nio-8080-exec-3] INFO  c.e.J.Aspect.Aspect – UserDetails com.example.JavaPatternsTask14.services.WebUserServiceImpl.loadUserByUsername(String) takes 5ms
+122632 [http-nio-8080-exec-3] INFO  c.e.J.Aspect.Aspect – UserDetails com.example.JavaPatternsTask14.services.WebUserService.loadUserByUsername(String) takes 5ms
 411006 [http-nio-8080-exec-8] INFO  c.e.J.Aspect.Aspect – Parameters: alex
 411010 [http-nio-8080-exec-8] INFO  c.e.J.Aspect.Aspect – Finish!
-411011 [http-nio-8080-exec-8] INFO  c.e.J.Aspect.Aspect – UserDetails com.example.JavaPatternsTask14.services.WebUserServiceImpl.loadUserByUsername(String) takes 5ms
+411011 [http-nio-8080-exec-8] INFO  c.e.J.Aspect.Aspect – UserDetails com.example.JavaPatternsTask14.services.WebUserService.loadUserByUsername(String) takes 5ms
 411633 [http-nio-8080-exec-9] INFO  c.e.J.Aspect.Aspect – Parameters: {}
 411633 [http-nio-8080-exec-9] INFO  c.e.J.services.PhoneService – Get all phones
 411638 [http-nio-8080-exec-9] INFO  c.e.J.Aspect.Aspect – Finish!
@@ -226,7 +226,7 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 56519 [http-nio-8080-exec-5] INFO  c.e.J.Aspect.Aspect – List com.example.JavaPatternsTask14.services.ManufactureService.sortManufactures(String) takes 187ms
 101048 [http-nio-8080-exec-9] INFO  c.e.J.Aspect.Aspect – Parameters: den
 101106 [http-nio-8080-exec-9] INFO  c.e.J.Aspect.Aspect – Finish!
-101106 [http-nio-8080-exec-9] INFO  c.e.J.Aspect.Aspect – UserDetails com.example.JavaPatternsTask14.services.WebUserServiceImpl.loadUserByUsername(String) takes 58ms
+101106 [http-nio-8080-exec-9] INFO  c.e.J.Aspect.Aspect – UserDetails com.example.JavaPatternsTask14.services.WebUserService.loadUserByUsername(String) takes 58ms
 106327 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
 106330 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
 106355 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
@@ -272,10 +272,199 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 61299 [http-nio-8080-exec-7] INFO  c.e.J.Aspect.Aspect – Finish!
 70205 [http-nio-8080-exec-9] INFO  c.e.J.Aspect.Aspect – Parameters: alex
 70209 [http-nio-8080-exec-9] INFO  c.e.J.Aspect.Aspect – Finish!
-70209 [http-nio-8080-exec-9] INFO  c.e.J.Aspect.Aspect – UserDetails com.example.JavaPatternsTask14.services.WebUserServiceImpl.loadUserByUsername(String) takes 4ms
+70209 [http-nio-8080-exec-9] INFO  c.e.J.Aspect.Aspect – UserDetails com.example.JavaPatternsTask14.services.WebUserService.loadUserByUsername(String) takes 4ms
 78490 [http-nio-8080-exec-1] INFO  c.e.J.Aspect.Aspect – Parameters: alex
 78494 [http-nio-8080-exec-1] INFO  c.e.J.Aspect.Aspect – Finish!
-78495 [http-nio-8080-exec-1] INFO  c.e.J.Aspect.Aspect – UserDetails com.example.JavaPatternsTask14.services.WebUserServiceImpl.loadUserByUsername(String) takes 5ms
+78495 [http-nio-8080-exec-1] INFO  c.e.J.Aspect.Aspect – UserDetails com.example.JavaPatternsTask14.services.WebUserService.loadUserByUsername(String) takes 5ms
 82824 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
 82828 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
 82832 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+942  [background-preinit] INFO  o.h.validator.internal.util.Version – HV000001: Hibernate Validator 8.0.1.Final
+1006 [main] INFO  c.e.J.JavaPatternsTask14Application – Starting JavaPatternsTask14Application using Java 19 with PID 13164 (D:\JavaTasks\JavaPatternsTask16\build\classes\java\main started by MI in D:\JavaTasks\JavaPatternsTask16)
+1008 [main] INFO  c.e.J.JavaPatternsTask14Application – No active profile set, falling back to 1 default profile: "default"
+1997 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2061 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 52 ms. Found 3 JPA repository interfaces.
+3700 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port 8080 (http)
+3714 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+3717 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+3717 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/10.1.19]
+3824 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+3825 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 2741 ms
+4220 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+4483 [main] INFO  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@22e813fc
+4485 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+4635 [main] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+4732 [main] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 6.4.4.Final
+4785 [main] INFO  o.h.c.i.RegionFactoryInitiator – HHH000026: Second-level cache disabled
+5172 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo – No LoadTimeWeaver setup: ignoring JPA class transformer
+6802 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+6922 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+8064 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+8234 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping – Adding welcome page template: index
+8776 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 14 endpoint(s) beneath base path '/actuator'
+8921 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3c62bae5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c9ba9e2, org.springframework.security.web.context.SecurityContextHolderFilter@c310aa3, org.springframework.security.web.header.HeaderWriterFilter@41185195, org.springframework.security.web.authentication.logout.LogoutFilter@dc72335, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@628fa8ea, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5b3f0552, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1a18e18d, org.springframework.security.web.session.ConcurrentSessionFilter@74c919b2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@417f7d7f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@73c21b13, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@654ab198, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b628249, org.springframework.security.web.session.SessionManagementFilter@139a97e7, org.springframework.security.web.access.ExceptionTranslationFilter@3cd6cab5, org.springframework.security.web.access.intercept.AuthorizationFilter@57e6f449]
+9656 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+9696 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port 8080 (http) with context path ''
+9724 [main] INFO  c.e.J.JavaPatternsTask14Application – Started JavaPatternsTask14Application in 9.252 seconds (process running for 10.513)
+10357 [RMI TCP Connection(2)-192.168.56.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+10358 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+10365 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 6 ms
+34598 [http-nio-8080-exec-5] INFO  c.e.J.Aspect.Aspect – Parameters: den
+34826 [http-nio-8080-exec-5] INFO  c.e.J.Aspect.Aspect – Finish!
+34828 [http-nio-8080-exec-5] INFO  c.e.J.Aspect.Aspect – UserDetails com.example.JavaPatternsTask14.services.WebUserService.loadUserByUsername(String) takes 228ms
+35500 [http-nio-8080-exec-6] INFO  c.e.J.Aspect.Aspect – Parameters: {}
+35500 [http-nio-8080-exec-6] INFO  c.e.J.services.PhoneService – Get all phones
+35536 [http-nio-8080-exec-6] INFO  c.e.J.Aspect.Aspect – Finish!
+35536 [http-nio-8080-exec-6] INFO  c.e.J.Aspect.Aspect – List com.example.JavaPatternsTask14.services.PhoneService.getAllPhones() takes 36ms
+182373 [http-nio-8080-exec-9] INFO  c.e.J.Aspect.Aspect – Parameters: id
+182373 [http-nio-8080-exec-9] INFO  c.e.J.services.ManufactureService – Sort manufactures by order id
+182389 [http-nio-8080-exec-9] INFO  c.e.J.Aspect.Aspect – Finish!
+182389 [http-nio-8080-exec-9] INFO  c.e.J.Aspect.Aspect – List com.example.JavaPatternsTask14.services.ManufactureService.sortManufactures(String) takes 16ms
+196656 [http-nio-8080-exec-3] INFO  c.e.J.Aspect.Aspect – Parameters: alex
+196661 [http-nio-8080-exec-3] INFO  c.e.J.Aspect.Aspect – Finish!
+196661 [http-nio-8080-exec-3] INFO  c.e.J.Aspect.Aspect – UserDetails com.example.JavaPatternsTask14.services.WebUserService.loadUserByUsername(String) takes 5ms
+202412 [http-nio-8080-exec-5] INFO  c.e.J.Aspect.Aspect – Parameters: alex
+202415 [http-nio-8080-exec-5] INFO  c.e.J.Aspect.Aspect – Finish!
+202416 [http-nio-8080-exec-5] INFO  c.e.J.Aspect.Aspect – UserDetails com.example.JavaPatternsTask14.services.WebUserService.loadUserByUsername(String) takes 4ms
+216398 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+216402 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+216416 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+921  [background-preinit] INFO  o.h.validator.internal.util.Version – HV000001: Hibernate Validator 8.0.1.Final
+983  [main] INFO  c.e.J.JavaPatternsTask14Application – Starting JavaPatternsTask14Application using Java 19 with PID 14392 (D:\JavaTasks\JavaPatternsTask16\build\classes\java\main started by MI in D:\JavaTasks\JavaPatternsTask16)
+984  [main] INFO  c.e.J.JavaPatternsTask14Application – No active profile set, falling back to 1 default profile: "default"
+1959 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2031 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 60 ms. Found 3 JPA repository interfaces.
+3729 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port 8080 (http)
+3743 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+3746 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+3746 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/10.1.19]
+3848 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+3849 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 2802 ms
+4272 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+4540 [main] INFO  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@517a46f3
+4542 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+4699 [main] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+4796 [main] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 6.4.4.Final
+4846 [main] INFO  o.h.c.i.RegionFactoryInitiator – HHH000026: Second-level cache disabled
+5230 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo – No LoadTimeWeaver setup: ignoring JPA class transformer
+6818 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+6938 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+8040 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+8207 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping – Adding welcome page template: index
+8753 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 14 endpoint(s) beneath base path '/actuator'
+8891 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@32c7495, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2640f5ea, org.springframework.security.web.context.SecurityContextHolderFilter@5118c7fb, org.springframework.security.web.header.HeaderWriterFilter@dc72335, org.springframework.security.web.authentication.logout.LogoutFilter@272d0dd3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@40a32c25, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4ce1ab4c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@45accb5, org.springframework.security.web.session.ConcurrentSessionFilter@1c3b4de1, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3c3d2a80, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@aee3d6e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a649f9a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1b32aaca, org.springframework.security.web.session.SessionManagementFilter@4a6dd88e, org.springframework.security.web.access.ExceptionTranslationFilter@57642552, org.springframework.security.web.access.intercept.AuthorizationFilter@2771e501]
+9642 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+9678 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port 8080 (http) with context path ''
+9706 [main] INFO  c.e.J.JavaPatternsTask14Application – Started JavaPatternsTask14Application in 9.24 seconds (process running for 10.455)
+10356 [RMI TCP Connection(3)-192.168.56.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+10356 [RMI TCP Connection(3)-192.168.56.1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+10359 [RMI TCP Connection(3)-192.168.56.1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 2 ms
+23310 [http-nio-8080-exec-3] INFO  c.e.J.Aspect.Aspect – Parameters: den
+23539 [http-nio-8080-exec-3] INFO  c.e.J.Aspect.Aspect – Finish!
+23541 [http-nio-8080-exec-3] INFO  c.e.J.Aspect.Aspect – UserDetails com.example.JavaPatternsTask14.services.WebUserService.loadUserByUsername(String) takes 229ms
+24234 [http-nio-8080-exec-4] INFO  c.e.J.Aspect.Aspect – Parameters: {}
+24234 [http-nio-8080-exec-4] INFO  c.e.J.services.PhoneService – Get all phones
+24270 [http-nio-8080-exec-4] INFO  c.e.J.Aspect.Aspect – Finish!
+24270 [http-nio-8080-exec-4] INFO  c.e.J.Aspect.Aspect – List com.example.JavaPatternsTask14.services.PhoneService.getAllPhones() takes 36ms
+40222 [http-nio-8080-exec-8] INFO  c.e.J.Aspect.Aspect – Parameters: dfd
+40227 [http-nio-8080-exec-8] INFO  c.e.J.Aspect.Aspect – Finish!
+45406 [http-nio-8080-exec-10] INFO  c.e.J.Aspect.Aspect – Parameters: alex
+45410 [http-nio-8080-exec-10] INFO  c.e.J.Aspect.Aspect – Finish!
+45410 [http-nio-8080-exec-10] INFO  c.e.J.Aspect.Aspect – UserDetails com.example.JavaPatternsTask14.services.WebUserService.loadUserByUsername(String) takes 4ms
+51002 [http-nio-8080-exec-2] INFO  c.e.J.Aspect.Aspect – Parameters: alex
+51006 [http-nio-8080-exec-2] INFO  c.e.J.Aspect.Aspect – Finish!
+51006 [http-nio-8080-exec-2] INFO  c.e.J.Aspect.Aspect – UserDetails com.example.JavaPatternsTask14.services.WebUserService.loadUserByUsername(String) takes 4ms
+56191 [http-nio-8080-exec-4] INFO  c.e.J.Aspect.Aspect – Parameters: name
+56191 [http-nio-8080-exec-4] INFO  c.e.J.services.ManufactureService – Sort manufactures by order name
+56205 [http-nio-8080-exec-4] INFO  c.e.J.Aspect.Aspect – Finish!
+56206 [http-nio-8080-exec-4] INFO  c.e.J.Aspect.Aspect – List com.example.JavaPatternsTask14.services.ManufactureService.sortManufactures(String) takes 15ms
+66069 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+66073 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+66080 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+926  [background-preinit] INFO  o.h.validator.internal.util.Version – HV000001: Hibernate Validator 8.0.1.Final
+986  [main] INFO  c.e.J.JavaPatternsTask14Application – Starting JavaPatternsTask14Application using Java 19 with PID 8436 (D:\JavaTasks\JavaPatternsTask16\build\classes\java\main started by MI in D:\JavaTasks\JavaPatternsTask16)
+987  [main] INFO  c.e.J.JavaPatternsTask14Application – No active profile set, falling back to 1 default profile: "default"
+2003 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2073 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 56 ms. Found 3 JPA repository interfaces.
+3799 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port 8080 (http)
+3816 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+3819 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+3820 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/10.1.19]
+3918 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+3918 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 2868 ms
+4338 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+4615 [main] INFO  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3f9f8d23
+4617 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+4762 [main] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+4848 [main] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 6.4.4.Final
+4901 [main] INFO  o.h.c.i.RegionFactoryInitiator – HHH000026: Second-level cache disabled
+5296 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo – No LoadTimeWeaver setup: ignoring JPA class transformer
+6979 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+7106 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+8308 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+8483 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping – Adding welcome page template: index
+9120 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 14 endpoint(s) beneath base path '/actuator'
+9275 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@199549a5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5edeb83e, org.springframework.security.web.context.SecurityContextHolderFilter@7db53694, org.springframework.security.web.header.HeaderWriterFilter@654ab198, org.springframework.security.web.authentication.logout.LogoutFilter@3a649f9a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@18482805, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@40d1e561, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4844cbe4, org.springframework.security.web.session.ConcurrentSessionFilter@452aea78, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1a18e18d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ee91bdf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4a6dd88e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c752425, org.springframework.security.web.session.SessionManagementFilter@46875fae, org.springframework.security.web.access.ExceptionTranslationFilter@c310aa3, org.springframework.security.web.access.intercept.AuthorizationFilter@6e0fd2dc]
+10093 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+10123 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port 8080 (http) with context path ''
+10150 [main] INFO  c.e.J.JavaPatternsTask14Application – Started JavaPatternsTask14Application in 9.676 seconds (process running for 10.869)
+10917 [RMI TCP Connection(3)-192.168.56.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+10918 [RMI TCP Connection(3)-192.168.56.1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+10921 [RMI TCP Connection(3)-192.168.56.1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 3 ms
+22653 [http-nio-8080-exec-1] INFO  c.e.J.Aspect.Aspect – Parameters: den
+22653 [http-nio-8080-exec-1] INFO  c.e.J.services.WebUserService – Loading user den...
+22860 [http-nio-8080-exec-1] INFO  c.e.J.services.WebUserService – Access granted to user den...
+22862 [http-nio-8080-exec-1] INFO  c.e.J.Aspect.Aspect – Finish!
+22863 [http-nio-8080-exec-1] INFO  c.e.J.Aspect.Aspect – UserDetails com.example.JavaPatternsTask14.services.WebUserService.loadUserByUsername(String) takes 210ms
+65931 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+65934 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+65940 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+938  [background-preinit] INFO  o.h.validator.internal.util.Version – HV000001: Hibernate Validator 8.0.1.Final
+1000 [main] INFO  c.e.J.JavaPatternsTask14Application – Starting JavaPatternsTask14Application using Java 19 with PID 6800 (D:\JavaTasks\JavaPatternsTask16\build\classes\java\main started by MI in D:\JavaTasks\JavaPatternsTask16)
+1002 [main] INFO  c.e.J.JavaPatternsTask14Application – No active profile set, falling back to 1 default profile: "default"
+2006 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2080 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 62 ms. Found 3 JPA repository interfaces.
+3892 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port 8080 (http)
+3910 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+3913 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+3913 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/10.1.19]
+4009 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+4009 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 2939 ms
+4417 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+4692 [main] INFO  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@789dd6bf
+4694 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+4848 [main] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+4936 [main] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 6.4.4.Final
+4989 [main] INFO  o.h.c.i.RegionFactoryInitiator – HHH000026: Second-level cache disabled
+5365 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo – No LoadTimeWeaver setup: ignoring JPA class transformer
+6928 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+7061 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+8225 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+8408 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping – Adding welcome page template: index
+8975 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 14 endpoint(s) beneath base path '/actuator'
+9117 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@54d8236c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5697f801, org.springframework.security.web.context.SecurityContextHolderFilter@2c3c05ff, org.springframework.security.web.header.HeaderWriterFilter@432fca40, org.springframework.security.web.authentication.logout.LogoutFilter@3c62bae5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4844cbe4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@69173bb7, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@15382815, org.springframework.security.web.session.ConcurrentSessionFilter@7db53694, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@27959922, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@da09b52, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7afffc81, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@39b265c9, org.springframework.security.web.session.SessionManagementFilter@2179127d, org.springframework.security.web.access.ExceptionTranslationFilter@6b334a1, org.springframework.security.web.access.intercept.AuthorizationFilter@4c29138a]
+9890 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+9915 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port 8080 (http) with context path ''
+9942 [main] INFO  c.e.J.JavaPatternsTask14Application – Started JavaPatternsTask14Application in 9.456 seconds (process running for 10.704)
+10269 [RMI TCP Connection(3)-192.168.56.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+10269 [RMI TCP Connection(3)-192.168.56.1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+10272 [RMI TCP Connection(3)-192.168.56.1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 3 ms
+13971 [http-nio-8080-exec-1] INFO  c.e.J.Aspect.Aspect – Parameters: den
+13971 [http-nio-8080-exec-1] INFO  c.e.J.services.WebUserService – Searching user den...
+14176 [http-nio-8080-exec-1] INFO  c.e.J.Aspect.Aspect – Finish!
+14179 [http-nio-8080-exec-1] INFO  c.e.J.Aspect.Aspect – UserDetails com.example.JavaPatternsTask14.services.WebUserService.loadUserByUsername(String) takes 206ms
+32618 [http-nio-8080-exec-3] INFO  c.e.J.Aspect.Aspect – Parameters: alex
+32619 [http-nio-8080-exec-3] INFO  c.e.J.services.WebUserService – Searching user alex...
+32622 [http-nio-8080-exec-3] INFO  c.e.J.Aspect.Aspect – Finish!
+32622 [http-nio-8080-exec-3] INFO  c.e.J.Aspect.Aspect – UserDetails com.example.JavaPatternsTask14.services.WebUserService.loadUserByUsername(String) takes 4ms
+91858 [http-nio-8080-exec-7] INFO  c.e.J.Aspect.Aspect – Parameters: com.example.JavaPatternsTask14.models.WebUser@2cf4addf
+91858 [http-nio-8080-exec-7] INFO  c.e.J.services.WebUserService – Saving user user...
+92492 [http-nio-8080-exec-7] INFO  c.e.J.Aspect.Aspect – Finish!
+92493 [http-nio-8080-exec-7] INFO  c.e.J.Aspect.Aspect – void com.example.JavaPatternsTask14.services.WebUserService.saveUser(WebUser) takes 635ms
+123984 [http-nio-8080-exec-10] INFO  c.e.J.Aspect.Aspect – Parameters: user
+123984 [http-nio-8080-exec-10] INFO  c.e.J.services.WebUserService – Searching user user...
+123988 [http-nio-8080-exec-10] INFO  c.e.J.Aspect.Aspect – Finish!
+123988 [http-nio-8080-exec-10] INFO  c.e.J.Aspect.Aspect – UserDetails com.example.JavaPatternsTask14.services.WebUserService.loadUserByUsername(String) takes 4ms
+128467 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+128471 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+128492 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.

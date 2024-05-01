@@ -1,9 +1,7 @@
 package com.example.JavaPatternsTask14.controllers;
 
-import com.example.JavaPatternsTask14.dto.WebUserDTO;
 import com.example.JavaPatternsTask14.models.WebUser;
 import com.example.JavaPatternsTask14.services.WebUserService;
-import com.example.JavaPatternsTask14.services.WebUserServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -20,14 +18,14 @@ public class RegistrationController {
 
     @GetMapping
     public String showRegistrationForm(Model model) {
-        model.addAttribute("user", new WebUserDTO("",""));
+        model.addAttribute("user", new WebUser("",""));
 
         return "registration";
     }
 
     @PostMapping
-    public String registerUserAccount(@ModelAttribute("user") WebUserDTO userDTO) {
-        webUserService.saveUser(userDTO);
+    public String registerUserAccount(@ModelAttribute("user") WebUser webUser) {
+        webUserService.saveUser(webUser);
 
         return "redirect:/register?success";
     }

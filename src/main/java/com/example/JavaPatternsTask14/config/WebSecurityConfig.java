@@ -2,7 +2,6 @@ package com.example.JavaPatternsTask14.config;
 
 import com.example.JavaPatternsTask14.repositories.WebUserRepo;
 import com.example.JavaPatternsTask14.services.WebUserService;
-import com.example.JavaPatternsTask14.services.WebUserServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.security.SecurityDataConfiguration;
@@ -68,6 +67,6 @@ public class WebSecurityConfig {
 
     @Bean
     public static WebUserService userService(WebUserRepo users) {
-        return new WebUserServiceImpl(passwordEncoder(), users);
+        return new WebUserService(passwordEncoder(), users);
     }
 }

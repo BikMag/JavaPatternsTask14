@@ -19,12 +19,12 @@ import java.util.List;
 @Transactional
 public class ManufactureService {
     private final ManufactureRepo manufactureRepository;
-    private final SessionFactory sessionFactory;
-    private Session session;
-    @PostConstruct
-    void init() {
-        session = sessionFactory.openSession();
-    }
+//    private final SessionFactory sessionFactory;
+//    private Session session;
+//    @PostConstruct
+//    void init() {
+//        session = sessionFactory.openSession();
+//    }
 
     public List<Manufacture> getAllManufactures() {
         log.info("Get all manufactures");

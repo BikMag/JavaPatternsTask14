@@ -20,12 +20,12 @@ import java.util.List;
 @Transactional
 public class PhoneService {
     private final PhoneRepo phoneRepository;
-    private final SessionFactory sessionFactory;
-    private Session session;
-    @PostConstruct
-    void init() {
-        session = sessionFactory.openSession();
-    }
+//    private final SessionFactory sessionFactory;
+//    private Session session;
+//    @PostConstruct
+//    void init() {
+//        session = sessionFactory.openSession();
+//    }
 
     public Manufacture getManufactureByPhone(Long phoneId) {
         log.info("Get manufacture by phone");
